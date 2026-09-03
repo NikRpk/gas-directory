@@ -57,24 +57,6 @@
     "screenshots": []
   },
   {
-    "id": "amazon-exact-keywords",
-    "enabled": false,
-    "name": "Amazon Exact Keywords",
-    "tagline": "Amazon Ads SKAG campaign generator",
-    "description": "A Google Apps Script tool that builds Amazon Ads SKAG (Single Keyword Ad Group) campaigns from a keyword list, generating structured bulk-upload files ready for Amazon Ads.",
-    "features": [
-      "SKAG campaign generation",
-      "Bulk-upload file export",
-      "Keyword-driven setup"
-    ],
-    "category": "Marketing",
-    "githubUrl": "https://github.com/NikRpk/amazon-exact-keywords",
-    "installNotes": "Copy the Google Sheet, add your keywords, and run the script from the custom menu to generate the Amazon bulk-upload file.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": []
-  },
-  {
     "id": "cc-multiple-keywords",
     "enabled": false,
     "name": "Keyword Recherche Tool",
