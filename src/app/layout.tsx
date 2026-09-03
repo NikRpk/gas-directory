@@ -3,7 +3,7 @@ import "./globals.css";
 import TopAppBar from "@/components/TopAppBar";
 
 export const metadata: Metadata = {
-  title: "Google Apps Scripts",
+  title: "Bolmsö Scripts",
   description:
     "A directory of Google Apps Script projects: explanations, install guides, GitHub links and screenshots.",
 };
@@ -33,6 +33,10 @@ export default function RootLayout({
               Built with Google&nbsp;Material&nbsp;Design ·{" "}
               <a href="https://github.com/NikRpk" className="text-primary hover:underline">
                 NikRpk
+              </a>{" "}
+              ·{" "}
+              <a href="/admin" className="text-on-surface-variant hover:underline">
+                Admin
               </a>
             </p>
           </div>

@@ -1,0 +1,473 @@
+[
+  {
+    "id": "ch-packschein",
+    "enabled": true,
+    "name": "CH Packschein",
+    "tagline": "Cross-docking packschein workflow for HelloFresh CH",
+    "description": "A Google Apps Script system that powers the HelloFresh Switzerland cross-docking packschein workflow. It covers packing, double-checking, a procurement web app, weekly archiving and exports — turning a manual paper-based process into a structured, trackable operation.",
+    "features": [
+      "Packing & double-check workflow",
+      "Procurement web app",
+      "Weekly archive & exports",
+      "Sheet-bound menus & validation"
+    ],
+    "category": "Operations",
+    "githubUrl": "https://github.com/NikRpk/ch-packschein",
+    "installNotes": "Deployed via clasp to a Google Sheet bound project. Clone the repo, run `clasp push`, then open the bound spreadsheet and use the custom menu to run the workflow.",
+    "installType": "sheet-bound",
+    "hasWebApp": true,
+    "screenshots": []
+  },
+  {
+    "id": "training-signup",
+    "enabled": true,
+    "name": "Training Signup",
+    "tagline": "Training signups, calendar sync & waitlists for HF DACH",
+    "description": "An Apps Script system for HelloFresh DACH training signups. It syncs signups to a calendar, manages a waiting list, sends branded confirmation emails, and exposes a signup web app — all inside the team's own Google Workspace.",
+    "features": [
+      "Calendar sync for sessions",
+      "Waiting list management",
+      "Branded confirmation emails",
+      "Public signup web app"
+    ],
+    "category": "Web App",
+    "githubUrl": "https://github.com/NikRpk/training-signup",
+    "installNotes": "Deploy as a web app with clasp (`clasp push`, then `clasp deploy`). Configure the sheet-driven settings, install triggers, and share the web app URL with trainees.",
+    "installType": "web-app",
+    "hasWebApp": true,
+    "screenshots": []
+  },
+  {
+    "id": "missing-room",
+    "enabled": true,
+    "name": "Calendar Room Audit",
+    "tagline": "Daily email digest of meetings missing a room",
+    "description": "Scans your Google Calendar every weekday morning and emails a grouped summary of meetings that need attention: events where the room resource declined, and meetings you organised with people but no room booked. Recurring meetings without a room are intentionally skipped.",
+    "features": [
+      "Detects declined room resources",
+      "Flags meetings with no room booked",
+      "Runs automatically on weekdays",
+      "Grouped email summary"
+    ],
+    "category": "Alerts & Notifications",
+    "githubUrl": "https://github.com/NikRpk/missing-room",
+    "installNotes": "A standalone Apps Script project synced with clasp. Clone, `clasp push`, set the script ID, and install the time-based trigger to run the audit each weekday.",
+    "installType": "standalone",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "cc-single-keyword",
+    "enabled": true,
+    "name": "CC Single Keyword Campaign Tool",
+    "tagline": "Amazon SKAG bulk-upload generator",
+    "description": "Generates Amazon Advertising Sponsored Products bulk-upload files using the SKAG (Single Keyword Ad Group) pattern — one keyword per campaign, ad group and keyword row. Every keyword gets its own daily budget and placement modifiers for precise optimisation.",
+    "features": [
+      "SKAG campaign structure",
+      "Per-keyword budget & ACOS targets",
+      "Bulk-upload .xlsx export",
+      "Auto-generated docs tab"
+    ],
+    "category": "Marketing",
+    "githubUrl": "https://github.com/NikRpk/cc-single-keyword",
+    "installNotes": "Copy the spreadsheet, fill in the `_Config` tab, then run the custom menu 'Campaign Creator → Create Export' and download the generated .xlsx to upload to Amazon Ads.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "amazon-exact-keywords",
+    "enabled": true,
+    "name": "Amazon Exact Keywords",
+    "tagline": "Amazon Ads SKAG campaign generator",
+    "description": "A Google Apps Script tool that builds Amazon Ads SKAG (Single Keyword Ad Group) campaigns from a keyword list, generating structured bulk-upload files ready for Amazon Ads.",
+    "features": [
+      "SKAG campaign generation",
+      "Bulk-upload file export",
+      "Keyword-driven setup"
+    ],
+    "category": "Marketing",
+    "githubUrl": "https://github.com/NikRpk/amazon-exact-keywords",
+    "installNotes": "Copy the Google Sheet, add your keywords, and run the script from the custom menu to generate the Amazon bulk-upload file.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "cc-multiple-keywords",
+    "enabled": true,
+    "name": "Keyword Recherche Tool",
+    "tagline": "Full Amazon campaign creation from keyword research",
+    "description": "A Google Sheets-bound tool that automates Amazon Sponsored Products campaign creation. It imports keyword data from Helium 10 / Cerebro exports, cleans and tags keywords, then generates a fully structured Amazon bulk-upload .xlsx covering campaigns, ad groups, product ads, negatives and bid placements. Supports manual, auto and product-targeting campaigns.",
+    "features": [
+      "Import from Helium 10 / Cerebro",
+      "Keyword cleaning & tagging",
+      "Manual, auto & product campaigns",
+      "20-column Amazon bulk upload",
+      "Pyramid keyword logic"
+    ],
+    "category": "Marketing",
+    "githubUrl": null,
+    "installNotes": "Internal tool (no public repo). Bound to a Google Sheet — import keyword data, work in the tagged Keywords tab, then generate the bulk-upload export from the custom menu.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": [],
+    "internal": true
+  },
+  {
+    "id": "gas-theme-colour-editor-sheets",
+    "enabled": true,
+    "name": "Theme Colour Editor",
+    "tagline": "Set & save custom theme colours across your Sheets",
+    "description": "A Google Sheets add-on for setting and saving custom theme colours across all your spreadsheets — no more typing hex codes every time. Colours are saved to your user profile and carry through to every sheet, including injecting extra colours into the paint-bucket palette.",
+    "features": [
+      "All 9 theme slots in one go",
+      "Extra colours in the paint palette",
+      "Native colour picker + hex input",
+      "Live preview & copy-to-clipboard",
+      "Per-user persistent settings"
+    ],
+    "category": "Utilities",
+    "githubUrl": "https://github.com/NikRpk/gas-theme-colour-editor-sheets",
+    "installNotes": "Deployed as a Google Sheets add-on via clasp. Open the add-on, set your colours once, and they apply across all your spreadsheets.",
+    "installType": "sheet-addon",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "hf-procrastin8tor",
+    "enabled": true,
+    "name": "Databricks → Sheets Writer",
+    "tagline": "Write Databricks SQL results into Google Sheets",
+    "description": "An Apps Script web app that receives Databricks SQL query results (chunked via S3 URLs) from an n8n workflow and writes them to the correct sheet tabs. A Config sheet drives which queries run and where results land, with a shared-secret API key protecting the endpoint.",
+    "features": [
+      "Web app data-write layer",
+      "n8n orchestration",
+      "Config-driven query routing",
+      "Shared-secret auth"
+    ],
+    "category": "Data & Reporting",
+    "githubUrl": null,
+    "installNotes": "Internal tool (no public repo). Deployed as a web app and called by an n8n workflow via HTTP POST with an API key.",
+    "installType": "web-app",
+    "hasWebApp": true,
+    "screenshots": [],
+    "internal": true
+  },
+  {
+    "id": "daily-task-summariser",
+    "enabled": true,
+    "name": "Action Item Tracker",
+    "tagline": "Turn Gemini meeting notes into tracked action items",
+    "description": "Automatically collects action items from your Gemini meeting-notes emails into one Google Sheet and sends a nightly digest (email + optional Slack) of just what's new. Runs entirely inside your own Google account — no server or shared backend.",
+    "features": [
+      "Scans Gemini notes emails",
+      "Extracts action items & follow-ups",
+      "Gemini enrichment (owner & due date)",
+      "Nightly email + Slack digest",
+      "Calendar matching"
+    ],
+    "category": "Productivity",
+    "githubUrl": null,
+    "installNotes": "Copy the spreadsheet, follow the Instructions tab, optionally add a Gemini API key and Slack token, then install the nightly trigger or run it manually from the menu.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "factor-scales",
+    "enabled": true,
+    "name": "Factor Weight Scales Tool",
+    "tagline": "Weight scale data processing for Factor & Verden",
+    "description": "A suite of Apps Script tools supporting the weight scales in Verden for both HelloFresh and Factor. It imports weight files, prepares PDL and picklist data, generates reset/tracking CSVs, and exports results to Excel.",
+    "features": [
+      "Weight file import",
+      "PDL & picklist preparation",
+      "Reset & tracking CSV generation",
+      "Excel export",
+      "Weekly folder creation"
+    ],
+    "category": "Operations",
+    "githubUrl": "https://github.com/NikRpk/weight_scales_factor",
+    "installNotes": "Internal operations tool. Deployed via clasp to the weight-scales spreadsheet; run the processing steps from the custom menu in sequence.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": [],
+    "internal": true
+  },
+  {
+    "id": "weight-scales-hellofresh",
+    "enabled": true,
+    "name": "Weight Scales for HelloFresh",
+    "tagline": "Weight scale data tools for HelloFresh",
+    "description": "Apps Script tooling that supports the weight scales used in HelloFresh production, handling the import and processing of weight data.",
+    "features": [
+      "Weight data import",
+      "Production support tooling"
+    ],
+    "category": "Operations",
+    "githubUrl": "https://github.com/NikRpk/weight_scales_hellofresh",
+    "installNotes": "Internal operations tool deployed via clasp to the weight-scales spreadsheet.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": [],
+    "internal": true
+  },
+  {
+    "id": "gas-alps-verden",
+    "enabled": true,
+    "name": "ALPS Verden Support",
+    "tagline": "Scripts supporting the Verden assembly line planning",
+    "description": "Apps Script tooling that supports the assembly line planning system for Verden production, helping plan and track the line.",
+    "features": [
+      "Assembly line planning support",
+      "Verden production tooling"
+    ],
+    "category": "Operations",
+    "githubUrl": "https://github.com/NikRpk/gas-alps-verden",
+    "installNotes": "Internal operations tool deployed via clasp to the planning spreadsheet.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": [],
+    "internal": true
+  },
+  {
+    "id": "ranked-customer-crm",
+    "enabled": true,
+    "name": "Ranked Customer CRM",
+    "tagline": "Customer CRM with billing & keyword research",
+    "description": "A Google Apps Script CRM for Ranked, managing customers with dialogs for billing, keyword costs, folder structure settings and keyword research. Includes branded welcome emails and a customer list interface.",
+    "features": [
+      "Customer list & management",
+      "Billing calculation dialogs",
+      "Keyword research integration",
+      "Branded welcome emails"
+    ],
+    "category": "Web App",
+    "githubUrl": null,
+    "installNotes": "Internal tool (no public repo). Bound to a Google Sheet; use the custom menu to open the CRM dialogs.",
+    "installType": "sheet-bound",
+    "hasWebApp": true,
+    "screenshots": [],
+    "internal": true
+  },
+  {
+    "id": "ch-product-data-alerts",
+    "enabled": true,
+    "name": "CH Product Data Alerts",
+    "tagline": "Weekly Slack & email alerts for CH product data quality",
+    "description": "Monitors a set of data-quality checks in a Google Sheet and, every Monday morning, dispatches Slack and email notifications for any check with an active issue. A secondary script keeps the menu-visual week dropdown in sync.",
+    "features": [
+      "Aggregates per-check status rows",
+      "Slack notifications with retry",
+      "HTML email alerts",
+      "Weekly time-based trigger"
+    ],
+    "category": "Alerts & Notifications",
+    "githubUrl": null,
+    "installNotes": "Internal tool (no public repo). Bound to the 'CH | Product Data [LIVE]' sheet; install the Monday-morning trigger to run `checkAndSendAlerts()`.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": [],
+    "internal": true
+  },
+  {
+    "id": "weekly-report",
+    "enabled": true,
+    "name": "Weekly Report",
+    "tagline": "Automated weekly reporting web app",
+    "description": "A Google Apps Script web app that generates and emails a branded weekly report, with audit and configuration logic plus an HTML email template.",
+    "features": [
+      "Automated weekly digest",
+      "Branded HTML email",
+      "Config-driven reporting"
+    ],
+    "category": "Data & Reporting",
+    "githubUrl": null,
+    "installNotes": "Internal tool (no public repo). Deployed as a web app; configure in the Config tab and install the weekly trigger.",
+    "installType": "web-app",
+    "hasWebApp": true,
+    "screenshots": [],
+    "internal": true
+  },
+  {
+    "id": "slack-email-alerts",
+    "enabled": true,
+    "name": "Slack & Email Alerts",
+    "tagline": "Reusable Slack + email alert sender",
+    "description": "A reusable Apps Script module for sending Slack and branded HTML email notifications from Google Sheets, with a clean configuration layer.",
+    "features": [
+      "Slack notifications",
+      "Branded HTML email",
+      "Config-driven setup"
+    ],
+    "category": "Alerts & Notifications",
+    "githubUrl": null,
+    "installNotes": "Internal tool (no public repo). Copy the script into a sheet project, configure the Config tab, and call the send functions from your own triggers.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": [],
+    "internal": true
+  },
+  {
+    "id": "google-apps-scripts-collection",
+    "enabled": true,
+    "name": "Google Apps Scripts Collection",
+    "tagline": "A collection of mini scripts & tools",
+    "description": "A public collection of mini scripts and reusable tools for Google Apps Script, including an introduction wiki and design standards for building clean, consistent sheet-based tools.",
+    "features": [
+      "Reusable mini scripts",
+      "Introduction wiki",
+      "Design standards for sheet tools"
+    ],
+    "category": "Utilities",
+    "githubUrl": "https://github.com/NikRpk/GoogleAppsScripts",
+    "installNotes": "Browse the repo and wiki, then copy the scripts you need into your own Apps Script project.",
+    "installType": "collection",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "weather-open-meteo",
+    "enabled": true,
+    "name": "Open-Meteo Weather Data",
+    "tagline": "Pull past & future weather data from Open-Meteo",
+    "description": "A Google Apps Script tool that pulls historical and forecast weather data from the Open-Meteo API into a Google Sheet, useful for analysis and planning.",
+    "features": [
+      "Historical & forecast data",
+      "Open-Meteo API integration",
+      "Sheet-based output"
+    ],
+    "category": "Data & Reporting",
+    "githubUrl": "https://github.com/NikRpk/Weather-data---Open-Meteo",
+    "installNotes": "Copy the script into a Google Sheet project and run it to fetch weather data for your chosen location and dates.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "gas-update-tvs",
+    "enabled": true,
+    "name": "Update TVS",
+    "tagline": "Automated sheet updates",
+    "description": "A Google Apps Script utility for updating data in Google Sheets, part of the author's GAS toolkit.",
+    "features": [
+      "Automated sheet updates"
+    ],
+    "category": "Utilities",
+    "githubUrl": "https://github.com/NikRpk/gas-update-tvs",
+    "installNotes": "Copy the script into your sheet project and adapt the update logic to your data.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "gas-amazon-keyword-research-campaign",
+    "enabled": true,
+    "name": "Amazon Keyword Research & Campaign Creation",
+    "tagline": "Automated Amazon keyword research & campaign creation",
+    "description": "A project for CleverClick & Ranked that automates Amazon keyword research and the creation of campaigns from those keywords.",
+    "features": [
+      "Keyword research automation",
+      "Campaign creation",
+      "Marketing workflow tooling"
+    ],
+    "category": "Marketing",
+    "githubUrl": "https://github.com/NikRpk/gas-amazon-keyword-research-and-campaign-creation",
+    "installNotes": "Copy the sheet and run the research + campaign creation scripts from the custom menu.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "gas-graph-risk-matrix",
+    "enabled": true,
+    "name": "Graph Risk Matrix",
+    "tagline": "Graph project risks on an interactive chart",
+    "description": "Graphs a risk matrix (potential impact & probability) in Google Sheets. Each point is placed into the correct quadrant and distributed evenly within it, giving a clean visual of project risks.",
+    "features": [
+      "Impact vs probability matrix",
+      "Automatic quadrant placement",
+      "Even distribution within quadrants"
+    ],
+    "category": "Data & Reporting",
+    "githubUrl": "https://github.com/NikRpk/gas-graph-risk-matrix",
+    "installNotes": "Copy the script into your sheet, add your risk data, and run the graphing function to render the matrix.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "gas-sensitivity-analysis",
+    "enabled": true,
+    "name": "Sensitivity Analysis Add-on",
+    "tagline": "Run sensitivity analysis on your Sheets model",
+    "description": "A Google Sheets add-on that lets you quickly run a sensitivity analysis by manipulating two variables and recording the effect on a model. Simple to install and adapt to your own needs.",
+    "features": [
+      "Two-variable sensitivity analysis",
+      "Guided pop-up workflow",
+      "Adaptable to custom models"
+    ],
+    "category": "Data & Reporting",
+    "githubUrl": "https://github.com/NikRpk/gas-sensitivity-analysis",
+    "installNotes": "Copy the script into your sheet, run 'Sensitivity analysis' from the menu, grant permission, and follow the pop-ups.",
+    "installType": "sheet-addon",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "gas-amazon-keyword-analyser",
+    "enabled": true,
+    "name": "Amazon Keyword Analyser",
+    "tagline": "Analyse & clean Amazon keywords",
+    "description": "A project for CleverClick & Ranked that analyses Amazon keywords and cleans them, preparing data for campaign use.",
+    "features": [
+      "Keyword analysis",
+      "Keyword cleaning",
+      "Marketing data prep"
+    ],
+    "category": "Marketing",
+    "githubUrl": "https://github.com/NikRpk/gas-amazon-keyword-analyser",
+    "installNotes": "Copy the sheet, import your keyword data, and run the analysis/cleaning scripts from the custom menu.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "placetel-record-evaluation",
+    "enabled": true,
+    "name": "Placetel Record Evaluation",
+    "tagline": "Evaluate Placetel call metrics in Google Sheets",
+    "description": "Scripts used in Google Sheets to evaluate call metrics from the Placetel provider, turning call records into usable reporting data.",
+    "features": [
+      "Call metric evaluation",
+      "Sheet-based reporting"
+    ],
+    "category": "Data & Reporting",
+    "githubUrl": "https://github.com/NikRpk/Placetel-Record-Evaluation",
+    "installNotes": "Copy the script into a Google Sheet with your Placetel call data and run the evaluation functions.",
+    "installType": "sheet-bound",
+    "hasWebApp": false,
+    "screenshots": []
+  },
+  {
+    "id": "ch-recipe-card-generator",
+    "enabled": true,
+    "name": "Recipe Card Generator",
+    "tagline": "Print-ready recipe cards from tabular data",
+    "description": "Generates HelloFresh recipe cards as print-ready PDFs from tabular data, with an Apps Script component. Each recipe produces a two-page A4 landscape PDF that matches the source card layout.",
+    "features": [
+      "Two-page A4 landscape PDFs",
+      "Concurrent rendering",
+      "Week & slot selection",
+      "Apps Script integration"
+    ],
+    "category": "Utilities",
+    "githubUrl": null,
+    "installNotes": "Internal tool (no public repo). Primarily a Python renderer using headless Chrome; the Apps Script component handles sheet-side data prep.",
+    "installType": "standalone",
+    "hasWebApp": false,
+    "screenshots": [],
+    "internal": true
+  }
+]
