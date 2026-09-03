@@ -192,22 +192,6 @@
     "screenshots": []
   },
   {
-    "id": "gas-update-tvs",
-    "enabled": true,
-    "name": "Update TVS",
-    "tagline": "Automated sheet updates",
-    "description": "A Google Apps Script utility for updating data in Google Sheets, part of the author's GAS toolkit.",
-    "features": [
-      "Automated sheet updates"
-    ],
-    "category": "Utilities",
-    "githubUrl": "https://github.com/NikRpk/gas-update-tvs",
-    "installNotes": "Copy the script into your sheet project and adapt the update logic to your data.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": []
-  },
-  {
     "id": "gas-amazon-keyword-research-campaign",
     "enabled": true,
     "name": "Amazon Keyword Research & Campaign Creation",
