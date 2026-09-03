@@ -28,7 +28,7 @@ export default function RootLayout({
         <main className="min-h-[calc(100vh-64px)]">{children}</main>
         <footer className="border-t border-outline-variant bg-surface-container py-8">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-center text-sm text-on-surface-variant sm:flex-row sm:text-left">
-            <p>gas.bolmso.app — a directory of Google Apps Script projects.</p>
+            <p>Bolmsö Scripts — a directory of Google Apps Script projects.</p>
             <p>
               Built with Google&nbsp;Material&nbsp;Design ·{" "}
               <a href="https://github.com/NikRpk" className="text-primary hover:underline">

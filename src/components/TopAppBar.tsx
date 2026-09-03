@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AuthButton from "@/components/AuthButton";
 
 export default function TopAppBar() {
   return (
@@ -12,19 +13,20 @@ export default function TopAppBar() {
             Bolmsö Scripts
           </span>
         </Link>
-        <nav className="ml-auto flex items-center gap-1 text-sm">
+        <nav className="ml-auto flex items-center gap-2 text-sm">
           <Link
             href="https://bolmso.app"
-            className="rounded-full px-3 py-2 text-on-surface-variant transition hover:bg-surface-container-high hover:text-on-surface"
+            className="hidden rounded-full px-3 py-2 text-on-surface-variant transition hover:bg-surface-container-high hover:text-on-surface sm:block"
           >
             bolmso.app
           </Link>
           <Link
             href="https://github.com/NikRpk"
-            className="rounded-full px-3 py-2 text-on-surface-variant transition hover:bg-surface-container-high hover:text-on-surface"
+            className="hidden rounded-full px-3 py-2 text-on-surface-variant transition hover:bg-surface-container-high hover:text-on-surface sm:block"
           >
             GitHub
           </Link>
+          <AuthButton />
         </nav>
       </div>
     </header>

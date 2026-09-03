@@ -8,6 +8,7 @@ import {
   installTypes,
   type Project,
 } from "@/data/projects";
+import { createClient } from "@/lib/supabase/client";
 
 const installTypeLabels: Record<string, string> = {
   "web-app": "Web App",
@@ -87,7 +88,7 @@ export default function AdminDashboard({
   };
 
   async function logout() {
-    await fetch("/api/admin/logout", { method: "POST" });
+    await createClient().auth.signOut();
     router.push("/");
     router.refresh();
   }
