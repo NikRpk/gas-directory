@@ -192,24 +192,6 @@
     "screenshots": []
   },
   {
-    "id": "gas-amazon-keyword-research-campaign",
-    "enabled": true,
-    "name": "Amazon Keyword Research & Campaign Creation",
-    "tagline": "Automated Amazon keyword research & campaign creation",
-    "description": "A project for CleverClick & Ranked that automates Amazon keyword research and the creation of campaigns from those keywords.",
-    "features": [
-      "Keyword research automation",
-      "Campaign creation",
-      "Marketing workflow tooling"
-    ],
-    "category": "Marketing",
-    "githubUrl": "https://github.com/NikRpk/gas-amazon-keyword-research-and-campaign-creation",
-    "installNotes": "Copy the sheet and run the research + campaign creation scripts from the custom menu.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": []
-  },
-  {
     "id": "gas-graph-risk-matrix",
     "enabled": true,
     "name": "Graph Risk Matrix",
