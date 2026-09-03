@@ -155,27 +155,6 @@
     "screenshots": []
   },
   {
-    "id": "factor-scales",
-    "enabled": true,
-    "name": "Factor Weight Scales Tool",
-    "tagline": "Weight scale data processing for Factor & Verden",
-    "description": "A suite of Apps Script tools supporting the weight scales in Verden for both HelloFresh and Factor. It imports weight files, prepares PDL and picklist data, generates reset/tracking CSVs, and exports results to Excel.",
-    "features": [
-      "Weight file import",
-      "PDL & picklist preparation",
-      "Reset & tracking CSV generation",
-      "Excel export",
-      "Weekly folder creation"
-    ],
-    "category": "Operations",
-    "githubUrl": "https://github.com/NikRpk/weight_scales_factor",
-    "installNotes": "Internal operations tool. Deployed via clasp to the weight-scales spreadsheet; run the processing steps from the custom menu in sequence.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": [],
-    "internal": true
-  },
-  {
     "id": "weight-scales-hellofresh",
     "enabled": true,
     "name": "Weight Scales for HelloFresh",
