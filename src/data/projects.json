@@ -1,24 +1,5 @@
 [
   {
-    "id": "ch-packschein",
-    "enabled": false,
-    "name": "CH Packschein",
-    "tagline": "Cross-docking packschein workflow for HelloFresh CH",
-    "description": "A Google Apps Script system that powers the HelloFresh Switzerland cross-docking packschein workflow. It covers packing, double-checking, a procurement web app, weekly archiving and exports — turning a manual paper-based process into a structured, trackable operation.",
-    "features": [
-      "Packing & double-check workflow",
-      "Procurement web app",
-      "Weekly archive & exports",
-      "Sheet-bound menus & validation"
-    ],
-    "category": "Operations",
-    "githubUrl": "https://github.com/NikRpk/ch-packschein",
-    "installNotes": "Deployed via clasp to a Google Sheet bound project. Clone the repo, run `clasp push`, then open the bound spreadsheet and use the custom menu to run the workflow.",
-    "installType": "sheet-bound",
-    "hasWebApp": true,
-    "screenshots": []
-  },
-  {
     "id": "training-signup",
     "enabled": true,
     "name": "Training Signup",
