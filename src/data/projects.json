@@ -78,26 +78,6 @@
     "screenshots": []
   },
   {
-    "id": "ch-product-data-alerts",
-    "enabled": true,
-    "name": "CH Product Data Alerts",
-    "tagline": "Weekly Slack & email alerts for CH product data quality",
-    "description": "Monitors a set of data-quality checks in a Google Sheet and, every Monday morning, dispatches Slack and email notifications for any check with an active issue. A secondary script keeps the menu-visual week dropdown in sync.",
-    "features": [
-      "Aggregates per-check status rows",
-      "Slack notifications with retry",
-      "HTML email alerts",
-      "Weekly time-based trigger"
-    ],
-    "category": "Alerts & Notifications",
-    "githubUrl": null,
-    "installNotes": "Internal tool (no public repo). Bound to the 'CH | Product Data [LIVE]' sheet; install the Monday-morning trigger to run `checkAndSendAlerts()`.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": [],
-    "internal": true
-  },
-  {
     "id": "weekly-report",
     "enabled": true,
     "name": "Weekly Report",
