@@ -96,24 +96,6 @@
     "internal": true
   },
   {
-    "id": "gas-alps-verden",
-    "enabled": true,
-    "name": "ALPS Verden Support",
-    "tagline": "Scripts supporting the Verden assembly line planning",
-    "description": "Apps Script tooling that supports the assembly line planning system for Verden production, helping plan and track the line.",
-    "features": [
-      "Assembly line planning support",
-      "Verden production tooling"
-    ],
-    "category": "Operations",
-    "githubUrl": "https://github.com/NikRpk/gas-alps-verden",
-    "installNotes": "Internal operations tool deployed via clasp to the planning spreadsheet.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": [],
-    "internal": true
-  },
-  {
     "id": "ranked-customer-crm",
     "enabled": true,
     "name": "Ranked Customer CRM",
