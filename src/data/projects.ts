@@ -1,3 +1,13 @@
+// ============================================================================
+// HOW TO CHOOSE WHICH PROJECTS APPEAR
+//
+// Every project below has an `enabled` field (true/false).
+//   enabled: true   -> shown in the directory
+//   enabled: false  -> hidden everywhere (home page + detail page)
+//
+// Just flip the flag and push — no other changes needed.
+// ============================================================================
+
 export type Category =
   | "Marketing"
   | "Productivity"

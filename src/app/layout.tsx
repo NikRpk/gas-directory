@@ -3,7 +3,7 @@ import "./globals.css";
 import TopAppBar from "@/components/TopAppBar";
 
 export const metadata: Metadata = {
-  title: "gas.bolmso.app — Google Apps Script Directory",
+  title: "Google Apps Scripts",
   description:
     "A directory of Google Apps Script projects: explanations, install guides, GitHub links and screenshots.",
 };

@@ -40,7 +40,7 @@ export default function Home() {
           Google Apps Script Directory
         </p>
         <h1 className="font-display text-4xl font-medium tracking-tight text-on-surface sm:text-5xl">
-          Scripts that automate the boring stuff
+          Google Apps Scripts
         </h1>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-on-surface-variant">
           A growing collection of Google Apps Script projects — from Amazon Ads
