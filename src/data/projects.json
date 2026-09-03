@@ -78,26 +78,6 @@
     "screenshots": []
   },
   {
-    "id": "ranked-customer-crm",
-    "enabled": true,
-    "name": "Ranked Customer CRM",
-    "tagline": "Customer CRM with billing & keyword research",
-    "description": "A Google Apps Script CRM for Ranked, managing customers with dialogs for billing, keyword costs, folder structure settings and keyword research. Includes branded welcome emails and a customer list interface.",
-    "features": [
-      "Customer list & management",
-      "Billing calculation dialogs",
-      "Keyword research integration",
-      "Branded welcome emails"
-    ],
-    "category": "Web App",
-    "githubUrl": null,
-    "installNotes": "Internal tool (no public repo). Bound to a Google Sheet; use the custom menu to open the CRM dialogs.",
-    "installType": "sheet-bound",
-    "hasWebApp": true,
-    "screenshots": [],
-    "internal": true
-  },
-  {
     "id": "ch-product-data-alerts",
     "enabled": true,
     "name": "CH Product Data Alerts",
