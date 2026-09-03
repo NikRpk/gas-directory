@@ -77,7 +77,7 @@
   },
   {
     "id": "amazon-exact-keywords",
-    "enabled": true,
+    "enabled": false,
     "name": "Amazon Exact Keywords",
     "tagline": "Amazon Ads SKAG campaign generator",
     "description": "A Google Apps Script tool that builds Amazon Ads SKAG (Single Keyword Ad Group) campaigns from a keyword list, generating structured bulk-upload files ready for Amazon Ads.",
