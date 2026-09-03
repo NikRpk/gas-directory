@@ -9,7 +9,7 @@ export default function TopAppBar() {
             G
           </span>
           <span className="font-display text-lg font-medium tracking-tight text-on-surface">
-            gas<span className="text-primary">.bolmso.app</span>
+            Bolmsö Scripts
           </span>
         </Link>
         <nav className="ml-auto flex items-center gap-1 text-sm">
