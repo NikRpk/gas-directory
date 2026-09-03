@@ -78,25 +78,6 @@
     "screenshots": []
   },
   {
-    "id": "weekly-report",
-    "enabled": true,
-    "name": "Weekly Report",
-    "tagline": "Automated weekly reporting web app",
-    "description": "A Google Apps Script web app that generates and emails a branded weekly report, with audit and configuration logic plus an HTML email template.",
-    "features": [
-      "Automated weekly digest",
-      "Branded HTML email",
-      "Config-driven reporting"
-    ],
-    "category": "Data & Reporting",
-    "githubUrl": null,
-    "installNotes": "Internal tool (no public repo). Deployed as a web app; configure in the Config tab and install the weekly trigger.",
-    "installType": "web-app",
-    "hasWebApp": true,
-    "screenshots": [],
-    "internal": true
-  },
-  {
     "id": "slack-email-alerts",
     "enabled": true,
     "name": "Slack & Email Alerts",
