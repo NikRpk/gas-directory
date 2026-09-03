@@ -58,7 +58,7 @@
   },
   {
     "id": "cc-single-keyword",
-    "enabled": true,
+    "enabled": false,
     "name": "CC Single Keyword Campaign Tool",
     "tagline": "Amazon SKAG bulk-upload generator",
     "description": "Generates Amazon Advertising Sponsored Products bulk-upload files using the SKAG (Single Keyword Ad Group) pattern — one keyword per campaign, ad group and keyword row. Every keyword gets its own daily budget and placement modifiers for precise optimisation.",
