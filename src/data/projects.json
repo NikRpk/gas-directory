@@ -1,7 +1,7 @@
 [
   {
     "id": "ch-packschein",
-    "enabled": true,
+    "enabled": false,
     "name": "CH Packschein",
     "tagline": "Cross-docking packschein workflow for HelloFresh CH",
     "description": "A Google Apps Script system that powers the HelloFresh Switzerland cross-docking packschein workflow. It covers packing, double-checking, a procurement web app, weekly archiving and exports — turning a manual paper-based process into a structured, trackable operation.",
