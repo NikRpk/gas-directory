@@ -264,23 +264,6 @@
     "screenshots": []
   },
   {
-    "id": "placetel-record-evaluation",
-    "enabled": true,
-    "name": "Placetel Record Evaluation",
-    "tagline": "Evaluate Placetel call metrics in Google Sheets",
-    "description": "Scripts used in Google Sheets to evaluate call metrics from the Placetel provider, turning call records into usable reporting data.",
-    "features": [
-      "Call metric evaluation",
-      "Sheet-based reporting"
-    ],
-    "category": "Data & Reporting",
-    "githubUrl": "https://github.com/NikRpk/Placetel-Record-Evaluation",
-    "installNotes": "Copy the script into a Google Sheet with your Placetel call data and run the evaluation functions.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": []
-  },
-  {
     "id": "ch-recipe-card-generator",
     "enabled": true,
     "name": "Recipe Card Generator",
