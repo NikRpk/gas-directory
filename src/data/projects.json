@@ -38,27 +38,6 @@
     "screenshots": []
   },
   {
-    "id": "cc-multiple-keywords",
-    "enabled": false,
-    "name": "Keyword Recherche Tool",
-    "tagline": "Full Amazon campaign creation from keyword research",
-    "description": "A Google Sheets-bound tool that automates Amazon Sponsored Products campaign creation. It imports keyword data from Helium 10 / Cerebro exports, cleans and tags keywords, then generates a fully structured Amazon bulk-upload .xlsx covering campaigns, ad groups, product ads, negatives and bid placements. Supports manual, auto and product-targeting campaigns.",
-    "features": [
-      "Import from Helium 10 / Cerebro",
-      "Keyword cleaning & tagging",
-      "Manual, auto & product campaigns",
-      "20-column Amazon bulk upload",
-      "Pyramid keyword logic"
-    ],
-    "category": "Marketing",
-    "githubUrl": null,
-    "installNotes": "Internal tool (no public repo). Bound to a Google Sheet — import keyword data, work in the tagged Keywords tab, then generate the bulk-upload export from the custom menu.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": [],
-    "internal": true
-  },
-  {
     "id": "gas-theme-colour-editor-sheets",
     "enabled": true,
     "name": "Theme Colour Editor",
