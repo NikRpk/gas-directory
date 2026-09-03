@@ -135,26 +135,6 @@
     "screenshots": []
   },
   {
-    "id": "hf-procrastin8tor",
-    "enabled": true,
-    "name": "Databricks → Sheets Writer",
-    "tagline": "Write Databricks SQL results into Google Sheets",
-    "description": "An Apps Script web app that receives Databricks SQL query results (chunked via S3 URLs) from an n8n workflow and writes them to the correct sheet tabs. A Config sheet drives which queries run and where results land, with a shared-secret API key protecting the endpoint.",
-    "features": [
-      "Web app data-write layer",
-      "n8n orchestration",
-      "Config-driven query routing",
-      "Shared-secret auth"
-    ],
-    "category": "Data & Reporting",
-    "githubUrl": null,
-    "installNotes": "Internal tool (no public repo). Deployed as a web app and called by an n8n workflow via HTTP POST with an API key.",
-    "installType": "web-app",
-    "hasWebApp": true,
-    "screenshots": [],
-    "internal": true
-  },
-  {
     "id": "daily-task-summariser",
     "enabled": true,
     "name": "Action Item Tracker",
