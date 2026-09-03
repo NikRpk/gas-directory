@@ -188,25 +188,5 @@
     "installType": "sheet-addon",
     "hasWebApp": false,
     "screenshots": []
-  },
-  {
-    "id": "ch-recipe-card-generator",
-    "enabled": true,
-    "name": "Recipe Card Generator",
-    "tagline": "Print-ready recipe cards from tabular data",
-    "description": "Generates HelloFresh recipe cards as print-ready PDFs from tabular data, with an Apps Script component. Each recipe produces a two-page A4 landscape PDF that matches the source card layout.",
-    "features": [
-      "Two-page A4 landscape PDFs",
-      "Concurrent rendering",
-      "Week & slot selection",
-      "Apps Script integration"
-    ],
-    "category": "Utilities",
-    "githubUrl": null,
-    "installNotes": "Internal tool (no public repo). Primarily a Python renderer using headless Chrome; the Apps Script component handles sheet-side data prep.",
-    "installType": "standalone",
-    "hasWebApp": false,
-    "screenshots": [],
-    "internal": true
   }
 ]
