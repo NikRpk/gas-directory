@@ -78,24 +78,6 @@
     "screenshots": []
   },
   {
-    "id": "weight-scales-hellofresh",
-    "enabled": true,
-    "name": "Weight Scales for HelloFresh",
-    "tagline": "Weight scale data tools for HelloFresh",
-    "description": "Apps Script tooling that supports the weight scales used in HelloFresh production, handling the import and processing of weight data.",
-    "features": [
-      "Weight data import",
-      "Production support tooling"
-    ],
-    "category": "Operations",
-    "githubUrl": "https://github.com/NikRpk/weight_scales_hellofresh",
-    "installNotes": "Internal operations tool deployed via clasp to the weight-scales spreadsheet.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": [],
-    "internal": true
-  },
-  {
     "id": "ranked-customer-crm",
     "enabled": true,
     "name": "Ranked Customer CRM",
