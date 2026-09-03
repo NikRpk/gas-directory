@@ -14,18 +14,6 @@ export default function TopAppBar() {
           </span>
         </Link>
         <nav className="ml-auto flex items-center gap-2 text-sm">
-          <Link
-            href="https://bolmso.app"
-            className="hidden rounded-full px-3 py-2 text-on-surface-variant transition hover:bg-surface-container-high hover:text-on-surface sm:block"
-          >
-            bolmso.app
-          </Link>
-          <Link
-            href="https://github.com/NikRpk"
-            className="hidden rounded-full px-3 py-2 text-on-surface-variant transition hover:bg-surface-container-high hover:text-on-surface sm:block"
-          >
-            GitHub
-          </Link>
           <AuthButton />
         </nav>
       </div>
