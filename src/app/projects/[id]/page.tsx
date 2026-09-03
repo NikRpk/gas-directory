@@ -26,8 +26,13 @@ const categoryColors: Record<string, string> = {
   Operations: "bg-surface-container-high text-on-surface",
 };
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = enabledProjects.find((p) => p.id === params.id);
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const project = enabledProjects.find((p) => p.id === id);
   if (!project) notFound();
 
   return (
