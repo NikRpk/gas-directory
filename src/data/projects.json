@@ -347,7 +347,7 @@
   },
   {
     "id": "gas-update-tvs",
-    "enabled": true,
+    "enabled": false,
     "name": "Update TVS",
     "tagline": "Automated sheet updates",
     "description": "A Google Apps Script utility for updating data in Google Sheets, part of the author's GAS toolkit.",
