@@ -190,24 +190,6 @@
     "screenshots": []
   },
   {
-    "id": "gas-amazon-keyword-analyser",
-    "enabled": true,
-    "name": "Amazon Keyword Analyser",
-    "tagline": "Analyse & clean Amazon keywords",
-    "description": "A project for CleverClick & Ranked that analyses Amazon keywords and cleans them, preparing data for campaign use.",
-    "features": [
-      "Keyword analysis",
-      "Keyword cleaning",
-      "Marketing data prep"
-    ],
-    "category": "Marketing",
-    "githubUrl": "https://github.com/NikRpk/gas-amazon-keyword-analyser",
-    "installNotes": "Copy the sheet, import your keyword data, and run the analysis/cleaning scripts from the custom menu.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": []
-  },
-  {
     "id": "ch-recipe-card-generator",
     "enabled": true,
     "name": "Recipe Card Generator",
