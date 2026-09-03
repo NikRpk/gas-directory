@@ -1,4 +1,4 @@
-# gas.bolmso.app
+# gas.bolmso.app — Bolmsö Scripts
 
 A directory of Google Apps Script projects — explanations, install guides, GitHub
 links and screenshots. Built with Next.js + Tailwind and styled with Google
@@ -11,45 +11,50 @@ npm install
 npm run dev
 ```
 
-## Managing the directory
+For the admin area locally, create `.env.local` (gitignored):
 
-All content lives in one file: **`src/data/projects.ts`**.
-
-### Including / excluding a project
-
-Each project has an `enabled: boolean` field. Set it to `false` to hide a
-project from the directory (it won't appear on the home page or have a detail
-page). Set it back to `true` to show it again.
-
-```ts
-{
-  id: "ch-packschein",
-  enabled: true,   // <- flip to false to hide
-  ...
-}
+```
+ADMIN_PASSWORD=your-password
+GITHUB_TOKEN=<github token with repo scope>
+GITHUB_REPO=NikRpk/gas-directory
 ```
 
-### Adding a project
+## Admin UI
 
-1. Add a new object to the `projects` array in `src/data/projects.ts`.
-2. Give it a unique kebab-case `id` and fill in the fields (name, tagline,
-   description, features, category, githubUrl, installNotes, installType, ...).
-3. Set `enabled: true`.
+Go to **/admin** (linked in the footer) and log in with the admin password.
 
-### Adding screenshots
+From there you can:
 
-1. Create a folder: `public/screenshots/<project-id>/`
-2. Drop your images in it (e.g. `public/screenshots/ch-packschein/shot1.png`).
-3. Add the paths to that project's `screenshots` array:
+- **Show / hide** a project (the `enabled` flag)
+- **Delete** a project
+- **Add** a new project (name, description, category, GitHub link, install notes, features)
+- **Upload / remove screenshots** per project
 
-```ts
-screenshots: ["/screenshots/ch-packschein/shot1.png"],
+How it works: every change is committed back to this repo via the GitHub API
+(`src/data/projects.json` for data, `public/screenshots/<id>/` for images), and
+Vercel auto-deploys on push — changes go live in about a minute. The admin UI
+always reads the latest committed state from GitHub, so it reflects changes
+immediately even while the public site is still redeploying.
+
+## Managing data by hand
+
+All content lives in **`src/data/projects.json`**. Each project has an
+`enabled: true/false` flag. Edit and push — Vercel redeploys automatically.
+
+Screenshots live in `public/screenshots/<project-id>/` and are referenced in
+each project's `screenshots` array, e.g.:
+
+```json
+"screenshots": ["/screenshots/ch-packschein/shot1.png"]
 ```
 
-Screenshots render on the project's detail page.
+## Environment variables (Vercel)
+
+- `ADMIN_PASSWORD` — password for the admin UI
+- `GITHUB_TOKEN` — GitHub token with `repo` scope (used for admin commits)
+- `GITHUB_REPO` — `NikRpk/gas-directory`
 
 ## Deploying
 
-Push to GitHub and import into Vercel as its own project, then attach the
-`gas.bolmso.app` domain. Because the hub (`bolmso.app`) auto-discovers apps via
-the Vercel API, the new subdomain will appear there automatically once verified.
+Push to `main` — Vercel auto-deploys. The site is attached to `gas.bolmso.app`
+and the hub (`bolmso.app`) auto-discovers it via the Vercel API.
