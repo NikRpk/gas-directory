@@ -192,24 +192,6 @@
     "screenshots": []
   },
   {
-    "id": "weather-open-meteo",
-    "enabled": true,
-    "name": "Open-Meteo Weather Data",
-    "tagline": "Pull past & future weather data from Open-Meteo",
-    "description": "A Google Apps Script tool that pulls historical and forecast weather data from the Open-Meteo API into a Google Sheet, useful for analysis and planning.",
-    "features": [
-      "Historical & forecast data",
-      "Open-Meteo API integration",
-      "Sheet-based output"
-    ],
-    "category": "Data & Reporting",
-    "githubUrl": "https://github.com/NikRpk/Weather-data---Open-Meteo",
-    "installNotes": "Copy the script into a Google Sheet project and run it to fetch weather data for your chosen location and dates.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": []
-  },
-  {
     "id": "gas-update-tvs",
     "enabled": true,
     "name": "Update TVS",
