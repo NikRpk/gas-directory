@@ -57,25 +57,6 @@
     "screenshots": []
   },
   {
-    "id": "cc-single-keyword",
-    "enabled": false,
-    "name": "CC Single Keyword Campaign Tool",
-    "tagline": "Amazon SKAG bulk-upload generator",
-    "description": "Generates Amazon Advertising Sponsored Products bulk-upload files using the SKAG (Single Keyword Ad Group) pattern — one keyword per campaign, ad group and keyword row. Every keyword gets its own daily budget and placement modifiers for precise optimisation.",
-    "features": [
-      "SKAG campaign structure",
-      "Per-keyword budget & ACOS targets",
-      "Bulk-upload .xlsx export",
-      "Auto-generated docs tab"
-    ],
-    "category": "Marketing",
-    "githubUrl": "https://github.com/NikRpk/cc-single-keyword",
-    "installNotes": "Copy the spreadsheet, fill in the `_Config` tab, then run the custom menu 'Campaign Creator → Create Export' and download the generated .xlsx to upload to Amazon Ads.",
-    "installType": "sheet-bound",
-    "hasWebApp": false,
-    "screenshots": []
-  },
-  {
     "id": "amazon-exact-keywords",
     "enabled": false,
     "name": "Amazon Exact Keywords",
