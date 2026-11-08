@@ -21,7 +21,7 @@ GITHUB_REPO=NikRpk/gas-directory
 
 ## Admin UI
 
-Go to **/admin** (linked in the footer) and log in with the admin password.
+Go to **/admin** (linked in the footer) and sign in with your `bolmso.app` admin account via the central `https://bolmso.app/login?app=gas` SSO page (shared `.bolmso.app` session cookie via `@supabase/ssr`).
 
 From there you can:
 
