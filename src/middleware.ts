@@ -1,9 +1,16 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { isAdminEmail } from "@/lib/admin";
+import { getBolmsoCookieOptions } from "@/lib/supabase/cookie-options";
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  const host =
+    request.headers.get("x-forwarded-host") ??
+    request.headers.get("host") ??
+    request.nextUrl.hostname;
+  const cookieOptions = getBolmsoCookieOptions(host);
 
   // Refresh the Supabase session on every request (standard @supabase/ssr flow).
   let response = NextResponse.next({ request });
@@ -12,6 +19,7 @@ export async function middleware(request: NextRequest) {
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
+      cookieOptions,
       cookies: {
         getAll() {
           return request.cookies.getAll();
@@ -22,7 +30,7 @@ export async function middleware(request: NextRequest) {
           );
           response = NextResponse.next({ request });
           cookiesToSet.forEach(({ name, value, options }) =>
-            response.cookies.set(name, value, options)
+            response.cookies.set(name, value, { ...options, ...cookieOptions })
           );
         },
       },
@@ -35,8 +43,7 @@ export async function middleware(request: NextRequest) {
 
   // Only /admin and /api/admin need protection; everything else is public.
   const isAdminPage = pathname.startsWith("/admin");
-  const isAdminApi =
-    pathname.startsWith("/api/admin");
+  const isAdminApi = pathname.startsWith("/api/admin");
 
   if (!isAdminPage && !isAdminApi) {
     return response;
